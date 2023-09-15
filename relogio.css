@@ -1,0 +1,29 @@
+.countdown {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.countdown h2{
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: red;
+}
+
+#timer {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+span#days{
+    color: green;
+}
+
+span#seconds{
+    margin: 0 10px;
+    color: red;
+}
