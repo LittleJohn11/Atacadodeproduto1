@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&family=Poppins:ital,wght@0,600;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    height: 100%;
+    overflow: unset;
+
+}
+
+.menu-lateral{
+    width: 80px;
+    height: 100%;
+    background-color: #202020;
+    padding: 40px 0 40px 1%;
+    box-shadow: 3px 0 0 #1E90FF;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .2s;
+}
+
+.menu-lateral.expandir{
+    width: 300px;
+}
+
+.btn-expandir{
+    width: 100%;
+    padding-left: 10px;
+}
+
+.btn-expandir i{
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+ul{
+    height: 100%;
+    list-style-type: none;
+}
+
+ul li.item-menu a{
+    transition: .2s;
+}
+
+ul li.ativo{
+    background-color: #1E90FF;
+}
+
+ul li.item-menu a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 40px;
+}
+
+ul li.item-menu a:hover{
+    background-color: #1E90FF;
+}
+
+ul li.item-menu a .txt-link{
+    margin-left: 70px;
+    transition: 1s;
+    opacity: 0;
+}
+
+.menu-lateral.expandir ul li.item-menu a .txt-link{
+    margin-left: 40px;
+    opacity: 1;
+}
+
+ul li.item-menu a .icon{
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+header{ 
+    background-color: #1E90FF;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.shop-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product-box{
+    margin-top: 20px;
+    margin-left: 110px;
+    cursor: pointer;
+    margin-right: 100px;
+    margin-bottom: 50px;
+}
+
+.product-box img{
+    max-width: 100%;
+}
+
+.product-box:hover{
+    padding: 10px;
+    border: 1px solid #ccc;
+    transition: 0.4s;
+}
+
+.product-title{
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.price{
+    color: #ff0000;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.img-dash{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 150px;
+    margin-bottom: 20px;
+    width: 500px;
+    height: 500px;
+}
+
+.agenda{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+/* Estilização do rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Estilização do conteúdo do rodapé */
+.container {
+    max-width: 1200px; /* Defina a largura máxima desejada */
+    margin: 0 auto; /* Centralize o conteúdo horizontalmente */
+}
+
+/* Estilização do link no rodapé, se necessário */
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+.swiper-container {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.swiper-wrapper {
+    display: flex;
+    justify-content: space-between;
+    transition: transform 0.3s ease-in-out;
+}
+
+.swiper-slide {
+    flex: 0 0 100%;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.swiper-slide img{
+    width: 400px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+button{
+    margin-left: 465px;
+}
+
+.dash{
+   display: inline-block;
+   align-items: center;
+   margin-top: 10px;
+   margin-left: 150px;
+   margin-bottom: 30px;
+}
+
+.dash img{
+    width: 100%px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.dash img.menor{
+    width: 100%;
+    height: 250px;
+    margin-top: 10px;
+}
+
+.dash:hover{
+    background-color: #DCDCDC;
+    padding: 10px;
+    border: 1px solid hsl(249, 32%, 17%);
+    transition: 0.4s;
+}
+
+.dash p{
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    margin-left: 10px;
+}
+
+.dash .btn{
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #1E90FF;
+    margin-left: 20px;
+    border-radius: 8px;
+}
+.dash .btn:hover{
+    background-color: #333;
+}
